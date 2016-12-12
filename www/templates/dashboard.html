@@ -1,0 +1,47 @@
+<ion-view view-title="Dashboard" hide-back-button="true">
+  <ion-content>
+	   
+	   	  <div class="list card">
+			  <div class="item item-body">
+			    
+			    <h3 class="text-center">Summary</h3>
+			     <div class="row header">
+		          <div class="col" style="color: green">Total Income</div>
+		          <div class="col" style="color: red">Total Expenses</div>
+		        </div>
+		        <div class="row">
+		          <div class="col" style="color: green">&#163;{{totalIncome}}</div>
+		          <div class="col" style="color: red">&#163;{{totalExpenses}}</div>
+		        </div>
+			  </div>
+
+			</div>
+
+			<div class="list card">
+			  <div class="item item-body">
+			    
+			    <h3 class="text-center">Balance</h3>
+			     <div class="row header">
+		          <div class="col">Total Balance</div>
+		          <div class="col" style="color: orange">&#163;{{totalBalance}}</div>
+		        </div>
+			  </div>
+
+			</div>
+
+
+			<div class="list card">
+			  <div class="item item-body">
+			    
+			    <h3 class="text-center">Budget</h3>
+			     <div class="row header">
+		          <div class="col">Total Budget</div>
+		          <div class="col" style="color: blue">&#163;{{totalBudget}}</div>
+		        </div>
+			  </div>
+
+			</div>
+
+    </ion-list>
+  </ion-content>
+</ion-view>

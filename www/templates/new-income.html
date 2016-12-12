@@ -1,0 +1,37 @@
+<ion-view view-title="New Income">
+  <ion-content>
+
+<div class="list card">
+  
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Category
+    </div>
+    <select ng-model="incomeData.category">
+      <option>Financial Income</option>
+      <option selected>Odd Jobs</option>
+      <option>Salary</option>
+      <option>Other</option>
+    </select>
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Title</span>
+    <input type="text" placeholder="Bus Ticket" ng-model="incomeData.title">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Amount</span>
+    <input type="number" placeholder="&#163;2.00" ng-model="incomeData.amount">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Date</span>
+    <input type="date" placeholder="" ng-model="incomeData.date">
+  </label>
+  <button class="button button-block button-positive" ng-click="addIncome()">
+    Create Income
+  </button>
+
+
+</div>
+
+  </ion-content>
+</ion-view>

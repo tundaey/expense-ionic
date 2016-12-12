@@ -1,0 +1,37 @@
+<ion-view view-title="New Expense">
+  <ion-content>
+
+<div class="list card">
+  
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Category
+    </div>
+    <select ng-model="expenseData.category">
+      <option>Accommodation</option>
+      <option selected>Eating Out</option>
+      <option>Clothing</option>
+      <option>Books/Magazines</option>
+    </select>
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Title</span>
+    <input type="text" placeholder="Bus Ticket" ng-model="expenseData.title">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Amount</span>
+    <input type="number" placeholder="&#163;2.00" ng-model="expenseData.amount">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Date</span>
+    <input type="date" placeholder="" ng-model="expenseData.date">
+  </label>
+  <button class="button button-block button-positive" ng-click="addExpense()">
+    Create Expense
+  </button>
+
+
+</div>
+
+  </ion-content>
+</ion-view>

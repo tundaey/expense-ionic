@@ -1,0 +1,22 @@
+<ion-view view-title="New Budget">
+  <ion-content>
+
+<div class="list card">
+  
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Title</span>
+    <input type="text" placeholder="Budget Name" ng-model="budgetData.title">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Amount</span>
+    <input type="number" placeholder="&#163;2.00" ng-model="budgetData.amount">
+  </label>
+  <button class="button button-block button-positive" ng-click="addBudget()">
+    Create Budget
+  </button>
+
+
+</div>
+
+  </ion-content>
+</ion-view>

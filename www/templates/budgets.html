@@ -1,0 +1,33 @@
+<ion-view view-title="Budgets" hide-back-button="true">
+	<ion-nav-buttons side="secondary">
+      <a ng-if="!edit_budget" class="button" ui-sref="app.budget">
+        New
+      </a>
+    </ion-nav-buttons>
+  <ion-content>
+	   
+	  <div class="card" ng-repeat="e in budgets" >
+		  <div class="item item-text-wrap">{{e.title}}
+			<a style="float: right" class="button button-icon button-small" ng-click="editBudget(e)">Edit Budget</a>
+		  </div>
+		  <div class="item item-text-wrap">Amount - &#163;{{e.amount}}</div>
+	  </div>
+
+	  <div ng-if="show_budget" class="card">
+  
+		  <label class="item item-input item-stacked-label">
+		    <span class="input-label">Title</span>
+		    <input type="text" placeholder="Budget Name" ng-model="budget.title">
+		  </label>
+		  <label class="item item-input item-stacked-label">
+		    <span class="input-label">Amount</span>
+		    <input type="number" placeholder="&#163;2.00" ng-model="budget.amount">
+		  </label>
+		  <button class="button button-block button-positive" ng-click="saveBudget(budget)">
+		    Edit Budget
+		  </button>
+		</div>
+
+    </ion-list>
+  </ion-content>
+</ion-view>
